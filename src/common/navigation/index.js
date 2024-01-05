@@ -6,6 +6,7 @@ const Navigation = () => {
     <Container>
       <Logo />
       <StyledLink to="/">Games</StyledLink>
+      <StyledLink to="/">Something</StyledLink>
       <Search />
     </Container>
   );
