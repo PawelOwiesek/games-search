@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Container, Logo, StyledLink } from "./styled";
+import Search from "./search";
 
 const Navigation = () => {
   return (
-    <div>
-      <Link to="/">Games</Link>
-    </div>
+    <Container>
+      <Logo />
+      <StyledLink to="/">Games</StyledLink>
+      <Search />
+    </Container>
   );
 };
 
