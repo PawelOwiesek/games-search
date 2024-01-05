@@ -28,6 +28,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
           color: "white",
           borderRadius: "25px",
           fontSize: "18px",
+          cursor: "pointer",
         }}
         onClick={() => handlePrevPage()}
         disabled={currentPage < 1}
@@ -46,6 +47,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
           color: "white",
           borderRadius: "25px",
           fontSize: "18px",
+          cursor: "pointer",
         }}
         onClick={() => handleNextPage()}
         disabled={currentPage >= totalPages / 20}
