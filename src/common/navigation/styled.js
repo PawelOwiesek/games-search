@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 `;
 
 export const Logo = styled(logo)`
@@ -20,5 +21,5 @@ export const StyledLink = styled(NavLink)`
   font-size: 25px;
   color: #1a1a1a;
   font-weight: 700;
-  margin-right: 300px;
+  margin-right: 10px;
 `;
