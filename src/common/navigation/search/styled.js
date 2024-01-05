@@ -10,5 +10,5 @@ export const Input = styled.input`
   background-repeat: no-repeat;
   background-position: 24px center;
   background-size: 24px 24px;
-  margin-right: 200px;
+  margin-right: 10px;
 `;
