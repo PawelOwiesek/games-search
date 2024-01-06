@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchData } from "../fetchApiData";
 import Pagination from "../../common/pagination";
 
@@ -60,7 +60,7 @@ const GamesPage = () => {
                       alt={`Screenshot `}
                     />{" "}
                   </p>
-                  <p
+                  <div
                     style={{
                       margin: "30px",
                       fontSize: "20px",
@@ -68,6 +68,14 @@ const GamesPage = () => {
                       fontWeight: "700",
                     }}
                   >
+                    <p>Platforms:</p>
+                    <ul>
+                      {game.platforms.map((platform) => (
+                        <li key={platform.platform.id}>
+                          {platform.platform.name}
+                        </li>
+                      ))}
+                    </ul>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
                     from 45 BC, making it over 2000 years old. Richard
@@ -82,7 +90,7 @@ const GamesPage = () => {
                     during the Renaissance. The first line of Lorem Ipsum,
                     "Lorem ipsum dolor sit amet..", comes from a line in section
                     1.10.32.
-                  </p>
+                  </div>
                 </div>
               </li>
             ))
