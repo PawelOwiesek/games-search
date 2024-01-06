@@ -33,7 +33,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
       <Button onClick={() => handleFirstPage()} disabled={currentPage < 1}>
         First Page
       </Button>
-      <Button onClick={() => handlePrevPage()} disabled={currentPage < 1}>
+      <Button onClick={() => handlePrevPage()} disabled={currentPage === 1}>
         Prev. Page
       </Button>
       <div>{currentPage} of 500</div>
