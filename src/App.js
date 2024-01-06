@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Navigation from "./common/navigation";
 import GamesPage from "./features/gamesPage";
+import Something from "./features/something";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<GamesPage />} />
+        <Route path="/something" element={<Something />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
