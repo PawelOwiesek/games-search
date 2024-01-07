@@ -6,8 +6,7 @@ const GameTile = ({ game, id, name, image }) => {
     <List>
       <li key={id}>
         <Container>
-          <Title>{name}</Title>{" "}
-          <Image key={id} src={image} alt={`Screenshot `} />{" "}
+          <Title>{name}</Title> <Image src={image} alt={`Screenshot `} />
           <Details>
             <PlatformTile game={game} />
             <Description>
