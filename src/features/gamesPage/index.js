@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchData } from "../fetchApiData";
 import Pagination from "../../common/pagination";
 import GameTile from "../../common/gameTile";
+import { Container } from "./styled";
 
 const GamesPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,7 +24,7 @@ const GamesPage = () => {
   }, [currentPage]);
 
   return (
-    <>
+    <Container>
       {games.length > 0 ? (
         games.map((game) => (
           <GameTile
@@ -41,7 +42,7 @@ const GamesPage = () => {
         totalPages={totalPages}
         currentPage={currentPage}
       />
-    </>
+    </Container>
   );
 };
 
