@@ -5,6 +5,10 @@ export const List = styled.ul`
   list-style-type: none;
 `;
 
+export const Item = styled.li`
+  text-decoration-line: none;
+`;
+
 export const Container = styled.div`
   max-width: 1400px;
   display: grid;

@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchData } from "../fetchApiData";
 import Pagination from "../../common/pagination";
 import GameTile from "../../common/gameTile";
-import { Container } from "./styled";
-import { Link } from "react-router-dom";
+import { Container, Link } from "./styled";
 
 const GamesPage = () => {
   const [currentPage, setCurrentPage] = useState(1);

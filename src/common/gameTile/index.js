@@ -1,10 +1,18 @@
 import PlatformTile from "../platformTile";
-import { Container, Description, Details, Image, List, Title } from "./styled";
+import {
+  Container,
+  Description,
+  Details,
+  Image,
+  Item,
+  List,
+  Title,
+} from "./styled";
 
 const GameTile = ({ game, id, name, image }) => {
   return (
     <List>
-      <li key={id}>
+      <Item key={id}>
         <Container>
           <Title>{name}</Title> <Image src={image} alt={`Screenshot `} />
           <Details>
@@ -25,7 +33,7 @@ const GameTile = ({ game, id, name, image }) => {
             </Description>{" "}
           </Details>
         </Container>
-      </li>
+      </Item>
     </List>
   );
 };
