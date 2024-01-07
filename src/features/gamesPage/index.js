@@ -3,6 +3,7 @@ import { fetchData } from "../fetchApiData";
 import Pagination from "../../common/pagination";
 import GameTile from "../../common/gameTile";
 import { Container } from "./styled";
+import { Link } from "react-router-dom";
 
 const GamesPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,12 +28,14 @@ const GamesPage = () => {
     <Container>
       {games.length > 0 ? (
         games.map((game) => (
-          <GameTile
-            id={game.id}
-            game={game}
-            name={game.name}
-            image={game.background_image}
-          />
+          <Link to={`/Description/${game.slug}`}>
+            <GameTile
+              id={game.id}
+              game={game}
+              name={game.name}
+              image={game.background_image}
+            />
+          </Link>
         ))
       ) : (
         <li>No games available</li>
