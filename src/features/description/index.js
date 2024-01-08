@@ -51,17 +51,7 @@ const Description = () => {
         alignItems: "center",
       }}
     >
-      <p
-        style={{
-          backgroundColor: "#bfbddc",
-          textAlign: "center",
-          fontSize: "20px",
-          lineHeight: "1.4",
-          padding: "10px",
-        }}
-      >
-        {description.replace(/<[^>]*>/g, "")}
-      </p>{" "}
+      {" "}
       <div>
         {videoId && (
           <iframe
@@ -74,6 +64,17 @@ const Description = () => {
           ></iframe>
         )}
       </div>{" "}
+      <p
+        style={{
+          backgroundColor: "#b0bab0",
+          textAlign: "center",
+          fontSize: "20px",
+          lineHeight: "1.4",
+          padding: "10px",
+        }}
+      >
+        {description.replace(/<[^>]*>/g, "")}
+      </p>{" "}
     </div>
   );
 };

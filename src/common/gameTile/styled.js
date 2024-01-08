@@ -6,7 +6,12 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  text-decoration-line: none;
+  border: 4px solid #d7d1d1;
+  margin-bottom: 100px;
+
+  &:hover {
+    border-color: #efe116;
+  }
 `;
 
 export const Container = styled.div`
@@ -16,15 +21,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #b0bab0;
-  margin-bottom: 100px;
 `;
 
 export const Title = styled.h1`
   grid-column: 1/3;
   justify-self: center;
-  font-size: 20px;
+  font-size: 25px;
   color: #1a1a1a;
   font-weight: 700;
+  letter-spacing: 3px;
 `;
 
 export const Image = styled.img`
