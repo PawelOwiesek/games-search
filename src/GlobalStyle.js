@@ -13,7 +13,7 @@ html {
 body {
     max-width:1400px;
     margin:0 auto;
-    background-color: ${({ theme }) => theme.color.whisper};
+    background-color: ${({ theme }) => theme.color.black};
     font-family: "Roboto", sans-serif;
     word-break: break-word;
     overflow-y: scroll;
