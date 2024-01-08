@@ -1,6 +1,6 @@
 import axios from "axios";
 const APIKEY = "b3b8853fc3674315b41a4bfbc5e13d4b";
-
+const TUBEKEY = "AIzaSyA5zv7QwmvMJqjSMoTjmkCIe5XCfumCtEk";
 export const fetchData = async ({ currentPage }) => {
   try {
     const response = await axios.get(
@@ -32,7 +32,7 @@ export const fetchVideo = async ({ id }) => {
     const response = await axios.get(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
         `${id} gameplay trailer`
-      )}&type=video&key=AIzaSyA5zv7QwmvMJqjSMoTjmkCIe5XCfumCtEk`
+      )}&type=video&key=${TUBEKEY}`
     );
     return { video: response.data };
   } catch (error) {
