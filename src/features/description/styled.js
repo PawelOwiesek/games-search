@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     width: 100vw;
   }
 `;

@@ -11,7 +11,7 @@ export const Input = styled.input`
   text-align: center;
   margin-right: 10px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     width: 200px;
     height: 30px;
     text-align: center;

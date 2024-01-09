@@ -22,7 +22,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.background};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     display: flex;
     flex-direction: column;
     padding: 5px;

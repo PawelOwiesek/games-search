@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   gap: 12px;
   margin: 5px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     position: absolute;
     right: 3px;
     top: 0;
@@ -23,7 +23,7 @@ export const TextContent = styled.p`
   color: ${({ theme }) => theme.mainColor};
   text-transform: uppercase;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     display: none;
   }
 `;

@@ -25,7 +25,7 @@ export const darkTheme = {
   breakpoint: {
     desktopMax: "1368px",
     desktop: "1200px",
-    ipod: "1024px",
+    ipad: "1024px",
     large: "767px",
     medium: "450px",
     small: "320px",
@@ -47,7 +47,7 @@ export const lightTheme = {
   breakpoint: {
     desktopMax: "1368px",
     desktop: "1200px",
-    ipod: "1024px",
+    ipad: "1024px",
     large: "767px",
     medium: "450px",
     small: "320px",

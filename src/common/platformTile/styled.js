@@ -7,7 +7,7 @@ export const List = styled.ul`
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipad}) {
     grid-template-columns: repeat(2, 1fr);
   }
 
