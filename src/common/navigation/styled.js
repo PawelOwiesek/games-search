@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   margin-bottom: 50px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
@@ -33,7 +33,7 @@ export const StyledLink = styled(NavLink)`
   font-weight: 700;
   margin-right: 10px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
     font-size: 20px;
     margin-bottom: 10px;
   }

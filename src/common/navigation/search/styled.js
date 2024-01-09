@@ -17,6 +17,7 @@ export const Input = styled.input`
     text-align: center;
     padding: 5px;
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
