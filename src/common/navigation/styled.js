@@ -3,7 +3,7 @@ import { ReactComponent as logo } from "../images/logo.svg";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-  background-color: #d7d1d1;
+  background-color: ${({ theme }) => theme.primaryColor};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,14 +12,14 @@ export const Container = styled.div`
 
 export const Logo = styled(logo)`
   cursor: pointer;
-  fill: #008080;
+  fill: ${({ theme }) => theme.logo};
 `;
 
 export const StyledLink = styled(NavLink)`
   text-decoration-line: none;
   cursor: pointer;
   font-size: 25px;
-  color: #1a1a1a;
+  color: ${({ theme }) => theme.mainColor};
   font-weight: 700;
   margin-right: 10px;
 `;
