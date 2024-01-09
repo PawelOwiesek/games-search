@@ -1,5 +1,6 @@
 import { Container, Logo, StyledLink } from "./styled";
 import Search from "./search";
+import ThemeButton from "../ThemeSlider";
 
 const Navigation = () => {
   return (
@@ -8,6 +9,7 @@ const Navigation = () => {
       <StyledLink to="/">Games</StyledLink>
       <StyledLink to="/something">Something</StyledLink>
       <Search />
+      <ThemeButton />
     </Container>
   );
 };
