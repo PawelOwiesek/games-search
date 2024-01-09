@@ -6,11 +6,11 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  border: 4px solid #d7d1d1;
+  border: 4px solid ${({ theme }) => theme.primaryColor};
   margin-bottom: 100px;
 
   &:hover {
-    border-color: #efe116;
+    border-color: ${({ theme }) => theme.hoverColor};
   }
 `;
 
@@ -20,14 +20,14 @@ export const Container = styled.div`
   grid-template-columns: 1fr auto;
   justify-content: center;
   align-items: center;
-  background-color: #b0bab0;
+  background-color: ${({ theme }) => theme.background};
 `;
 
 export const Title = styled.h1`
   grid-column: 1/3;
   justify-self: center;
   font-size: 25px;
-  color: #1a1a1a;
+  color: ${({ theme }) => theme.mainColor};
   font-weight: 700;
   letter-spacing: 3px;
 `;
@@ -41,7 +41,7 @@ export const Image = styled.img`
 export const Details = styled.div`
   margin: 30px;
   font-size: 20px;
-  color: #1a1a1a;
+  color: ${({ theme }) => theme.mainColor};
   font-weight: 700;
 `;
 
