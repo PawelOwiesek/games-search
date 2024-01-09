@@ -11,9 +11,9 @@ export const List = styled.ul`
 export const Item = styled.li`
   font-size: 20px;
   margin: 7px;
-  border: 4px solid #d7d1d1;
+  border: 4px solid ${({ theme }) => theme.primaryColor};
   border-radius: 25px;
-  color: #1a1a1a;
-  background-color: #fff;
+  color: ${({ theme }) => theme.mainColor};
+  background-color: ${({ theme }) => theme.alternativeBackground};
   text-align: center;
 `;
