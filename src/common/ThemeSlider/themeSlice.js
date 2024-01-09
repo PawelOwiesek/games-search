@@ -19,4 +19,3 @@ export const selectThemeState = (state) => state.theme;
 export const { toggleTheme } = themeSlice.actions;
 export const selectLightTheme = (state) => selectThemeState(state).isTheme;
 export default themeSlice.reducer;
-console.log(selectThemeState({ theme: { isTheme: true } }));
