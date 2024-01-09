@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchDescription, fetchVideo } from "../fetchApiData";
+import { AboutGame, Container, Player, Video } from "./styled";
 
 const Description = () => {
   const { id } = useParams();
@@ -41,41 +42,20 @@ const Description = () => {
   }, [id, description]);
 
   return (
-    <div
-      style={{
-        margin: "0 auto",
-        width: "1200px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <Container>
       {" "}
-      <div>
+      <Player>
         {videoId && (
-          <iframe
-            width="800"
-            height="600"
+          <Video
             src={`https://www.youtube.com/embed/${videoId}`}
             title="YouTube Video"
             frameBorder="0"
             allowFullScreen
-          ></iframe>
+          ></Video>
         )}
-      </div>{" "}
-      <p
-        style={{
-          backgroundColor: "#b0bab0",
-          textAlign: "center",
-          fontSize: "20px",
-          lineHeight: "1.4",
-          padding: "10px",
-        }}
-      >
-        {description.replace(/<[^>]*>/g, "")}
-      </p>{" "}
-    </div>
+      </Player>{" "}
+      <AboutGame>{description.replace(/<[^>]*>/g, "")}</AboutGame>{" "}
+    </Container>
   );
 };
 
