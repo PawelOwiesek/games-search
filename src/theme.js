@@ -37,7 +37,7 @@ export const lightTheme = {
   primaryColor: colors.boulder,
   logo: colors.lemon,
   background: colors.black,
-  disabledColor: colors.boulder,
+  disabledColor: colors.spring,
   hoverColor: colors.lemon,
   alternativeBackground: colors.spring,
   themeButton: {
