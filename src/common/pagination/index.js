@@ -21,24 +21,29 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
     setCurrentPage((currentPage = 500));
   };
 
+  const isMobile = window.innerWidth <= 767;
+  const prevButtonText = isMobile ? "<" : "Prev. Page";
+  const nextButtonText = isMobile ? ">" : "Next Page";
+  const lastButtonText = isMobile ? ">>" : "Last Page";
+  const firstButtonText = isMobile ? "<<" : "First Page";
   return (
     <Container>
       {" "}
       <Button onClick={() => handleFirstPage()} disabled={currentPage < 1}>
-        First Page
+        {firstButtonText}
       </Button>
       <Button onClick={() => handlePrevPage()} disabled={currentPage === 1}>
-        Prev. Page
+        {prevButtonText}
       </Button>
       <div>{currentPage} of 500</div>
       <Button onClick={() => handleNextPage()} disabled={currentPage === 500}>
-        Next Page
+        {nextButtonText}
       </Button>
       <Button
         onClick={() => handleLastPage()}
         disabled={currentPage >= totalPages / 20}
       >
-        Last Page
+        {lastButtonText}
       </Button>
     </Container>
   );
