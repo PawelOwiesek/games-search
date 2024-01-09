@@ -1,4 +1,4 @@
-import { Button } from "./styled";
+import { Button, Container } from "./styled";
 
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
   const handleFirstPage = () => {
@@ -22,13 +22,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <Container>
       {" "}
       <Button onClick={() => handleFirstPage()} disabled={currentPage < 1}>
         First Page
@@ -46,7 +40,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
       >
         Last Page
       </Button>
-    </div>
+    </Container>
   );
 };
 
