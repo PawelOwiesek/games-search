@@ -8,11 +8,21 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Logo = styled(logo)`
   cursor: pointer;
   fill: ${({ theme }) => theme.logo};
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-top: 25px;
+    height: 60px;
+  }
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -22,4 +32,9 @@ export const StyledLink = styled(NavLink)`
   color: ${({ theme }) => theme.mainColor};
   font-weight: 700;
   margin-right: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 `;

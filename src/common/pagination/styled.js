@@ -13,6 +13,10 @@ export const Button = styled.button`
   &:disabled {
     background-color: ${({ theme }) => theme.disabledColor};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    padding: 7px;
+  }
 `;
 
 export const Container = styled.div`
@@ -22,4 +26,9 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.primaryColor};
   font-weight: 900;
   font-size: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    font-weight: 400;
+    font-size: 16px;
+  }
 `;

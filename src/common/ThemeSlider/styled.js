@@ -7,10 +7,12 @@ export const Wrapper = styled.div`
   align-items: center;
   gap: 12px;
   margin: 5px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
     position: absolute;
-    right: 17px;
+    right: 3px;
+    top: 0;
     max-width: 100px;
+    margin: 10px;
   }
 `;
 

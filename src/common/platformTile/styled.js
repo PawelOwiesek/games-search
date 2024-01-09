@@ -6,6 +6,17 @@ export const List = styled.ul`
   grid-template-columns: repeat(3, 200px);
   padding: 0;
   list-style-type: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.ipod}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Item = styled.li`
@@ -16,4 +27,9 @@ export const Item = styled.li`
   color: ${({ theme }) => theme.mainColor};
   background-color: ${({ theme }) => theme.alternativeBackground};
   text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
+    font-size: 16px;
+    padding: 2px 0;
+  }
 `;
