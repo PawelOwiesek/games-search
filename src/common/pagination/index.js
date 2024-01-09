@@ -1,24 +1,32 @@
 import { Button, Container } from "./styled";
 
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
+  const scrollUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   const handleFirstPage = () => {
     setCurrentPage(1);
+    scrollUp();
   };
 
   const handleNextPage = () => {
     if (currentPage < Math.ceil(totalPages / 20)) {
       setCurrentPage((currentPage) => currentPage + 1);
     }
+    scrollUp();
   };
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
+    scrollUp();
   };
 
   const handleLastPage = () => {
     setCurrentPage((currentPage = 500));
+    scrollUp();
   };
 
   const isMobile = window.innerWidth <= 767;
